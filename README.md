@@ -2,7 +2,7 @@
 
 A modern, full-featured QR Code Generator built with Python and Flask. Features real-time preview, multiple QR types, extensive customization, and a beautiful UI.
 
-![QR Studio](static/images/qr-studio-banner.png)
+![QR Studio](static/images/qr-studio-banner.svg)
 
 ## Features
 
