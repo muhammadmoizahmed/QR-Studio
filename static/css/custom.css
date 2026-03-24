@@ -1,0 +1,100 @@
+/* QR Studio - Additional Custom Styles */
+
+/* Smooth transitions for color changes */
+.qr-image {
+    transition: all 0.3s ease;
+}
+
+/* Color picker styling */
+input[type="color"] {
+    cursor: pointer;
+    border-radius: 8px;
+    border: 2px solid var(--border);
+    padding: 2px;
+    background: white;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border-radius: 6px;
+    border: none;
+}
+
+/* Loading animation for QR preview */
+.qr-loading {
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+/* Toast notification improvements */
+.toast {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Form input focus states */
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+/* Button hover effects */
+.btn-primary {
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px -5px rgba(99, 102, 241, 0.3);
+}
+
+/* Drag and drop zone */
+.file-upload:hover {
+    border-color: var(--primary);
+    background: rgba(99, 102, 241, 0.05);
+}
+
+/* Preview card hover */
+.preview-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+    .main-container {
+        padding: 1rem;
+    }
+    
+    .header-title {
+        font-size: 1.5rem;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+/* Dark mode specific adjustments */
+body.dark-mode .file-upload {
+    background: rgba(30, 41, 59, 0.5);
+    border-color: var(--border-dark);
+}
+
+body.dark-mode input[type="color"] {
+    background: var(--bg-dark);
+    border-color: var(--border-dark);
+}
